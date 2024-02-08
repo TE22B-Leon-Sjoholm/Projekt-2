@@ -1,0 +1,72 @@
+body{
+    margin: 0px;
+}
+body img{
+    max-width: 100%;
+
+}
+#ak1{
+    transform:scale(0.75)
+}
+#ak2{
+    transform:scaleX(-1) scale(0.75);
+}
+#logga{
+    transform:scale(1.5)
+}
+#Logg-flexbox{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #364784;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height:100px;
+}
+nav{
+    background-color: #6977a9;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    height: 80px;
+    width: auto;
+    color:white;
+    box-sizing: border-box;
+    justify-content: center;
+}
+nav *{
+    margin: 10px;
+    transform: scale(0.75);
+}
+a{
+    text-decoration: none;
+    color:white;
+   
+    
+}
+#nav-aktiv-länk{
+    font-weight: bold; 
+}
+#nav-länkar{
+    font-weight: none;
+}
+
+
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+
+
+
+
+
+}
+
+@media screen and (min-width: 1008px) {
+
+
+
+
+}

@@ -26,6 +26,33 @@ body img{
     justify-content: center;
     height:100px;
 }
+nav{
+    background-color: #6977a9;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    height: 80px;
+    width: auto;
+    color:white;
+    box-sizing: border-box;
+    justify-content: center;
+}
+nav *{
+    margin: 10px;
+    transform: scale(0.75);
+}
+a{
+    text-decoration: none;
+    color:white;
+   
+    
+}
+#nav-aktiv-länk{
+    font-weight: bold; 
+}
+#nav-länkar{
+    font-weight: none;
+}
 
 
 
