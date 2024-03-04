@@ -1,3 +1,5 @@
+
+
 @media screen and (min-width: 641px) and (max-width: 1007px) {
   html,
   body {
@@ -98,6 +100,10 @@
     background-color: white;
     transform: scale(1.25);
   }
+  #kundvagn-ikon:active {
+    -webkit-filter: invert();
+    transform: scale(1.25);
+  }
   footer {
     background-color: #364784;
     text-align: center;
@@ -107,6 +113,9 @@
   footer p {
     color: white;
     font-size: 20px;
+  }
+  h1{
+    text-align: center;
   }
   .produkterGrid{
     display: grid;
@@ -119,8 +128,12 @@
     background-color: white;
     margin: 15px;
     text-align: center;
-    width: 250px;
+    width: 350px;
     height: 250px;
+    border-radius: 20px;
+  }
+  .produkt:hover{
+    transform: scale(1.1);
   }
   .produkt img{
     height: 100px;
@@ -130,5 +143,19 @@
   }
   .produkt button{
     margin-bottom: 10px;
+    width: 155px;
+    height: 55px;
+    background-color: #364784;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+  }
+  .produkt button:hover{
+    transform: scale(1.10);
+  }
+  .produkt button:active{
+    background-color: white;
+    color:#364784;
+    outline-color: #364784;
   }
 }
