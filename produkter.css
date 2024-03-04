@@ -29,7 +29,108 @@
     justify-content: center;
     width: auto;
   }
-  
+  #vapen1 {
+    transform: scale(0.65);
+  }
+  #vapen2 {
+    transform: scaleX(-1) scale(0.65);
+  }
+  nav {
+    background-color: #6977a9;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    height: 80px;
+    width: auto;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 10px;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+
+  .nav-länk {
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-länk-aktiv,
+  .nav-länk:hover {
+    font-weight: bold;
+    color: white;
+  }
+
+  #kundvagn-ikon {
+    background-color: #6977a9;
+    margin-right: 30px;
+    border: none;
+    border-radius: 15px;
+    margin-left: -50px;
+  }
+  #kundvagn-ikon:hover {
+    background-color: white;
+    transform: scale(1.25);
+  }
+  #kundvagn-ikon:active {
+    -webkit-filter: invert();
+    transform: scale(1.25);
+  }
+  footer {
+    background-color: #364784;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    margin-top: auto;
+  }
+  footer p {
+    color: white;
+    font-size: 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .produkterGrid{  /* inte riktigt men jaja */
+    display: flex;
+    flex-direction: column;
+  }
+  .produkt {
+    background-color: white;
+    margin: 15px;
+    text-align: center;
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+  }
+  .produkt img {
+    height: 100px;
+    width: auto;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .produkt button {
+    margin-bottom: 15px;
+    width: 155px;
+    height: 55px;
+    background-color: #364784;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+  }
+  .produkt button:active {
+    background-color: white;
+    color: #364784;
+    outline-color: #364784;
+    transform: scale(1.1);
+  }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
