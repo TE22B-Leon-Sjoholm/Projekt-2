@@ -1,89 +1,114 @@
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-  html,
-  body {
-    height: 100%;
-    margin: 0;
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+    .box {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      color: #364784;
+      background-color: #364784;
+    }
+    #vapen {
+      height: 10px;
+    }
   }
-  .box {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    color: #364784;
-    background-color: #364784;
+  
+  @media screen and (min-width: 1008px) {
+    html {
+      height: 100%;
+    }
+  
+    body {
+      margin: 0;
+      background-color: #d9d9d9;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      width: auto;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .flexbox {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: #364784;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      width: auto;
+    }
+    #vapen1 {
+      margin-right: 300px;
+      transform: scale(0.65);
+    }
+    #vapen2 {
+      margin-left: 300px;
+      transform: scaleX(-1) scale(0.65);
+    }
+  
+    nav {
+      background-color: #6977a9;
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+      height: 80px;
+      width: auto;
+    }
+  
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      flex-grow: 1;
+      justify-content: center;
+    }
+  
+    nav li {
+      margin: 0 10px;
+    }
+  
+    .nav-länk {
+      font-weight: normal;
+      color: white;
+      text-decoration: none;
+    }
+    .nav-länk-aktiv,
+    .nav-länk:hover {
+      font-weight: bold;
+      color: white;
+    }
+  
+    #kundvagn-ikon{
+      background-color: #6977a9;
+      margin-right: 30px;
+      border: none;
+      border-radius: 15px;
+      margin-left: -70px;
+    }
+    #kundvagn-ikon:hover{
+        background-color:white;
+        transform: scale(1.25);
+    }
+    footer {
+        background-color: #364784;
+        text-align: center;
+        width: auto;
+        height: 150px;
+      }
+      footer p {
+        color: white;
+        font-size: 20px;
+        
+      }
+    
   }
-  #vapen {
-    height: 10px;
-  }
-}
-
-@media screen and (min-width: 1008px) {
-  html {
-    height: 100%;
-  }
-
-  body {
-    margin: 0;
-    background-color: #d9d9d9;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    width: auto;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .flexbox {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: #364784;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: auto;
-  }
-  #vapen1 {
-    margin-right: 300px;
-    transform: scale(0.65);
-  }
-  #vapen2 {
-    margin-left: 300px;
-    transform: scaleX(-1) scale(0.65);
-  }
-
-  nav {
-    background-color: #6977a9;
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    height: 80px;
-    width: auto;
-  }
-
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-grow: 1;
-    justify-content: center;
-  }
-
-  nav li {
-    margin: 0 10px;
-  }
-
-  .nav-länk {
-    font-weight: normal;
-    color: white;
-    text-decoration: none;
-  }
-  .nav-länk-aktiv,
-  .nav-länk:hover {
-    font-weight: bold;
-    color: white;
-  }
-}
+  
