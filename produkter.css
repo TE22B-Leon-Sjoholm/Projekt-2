@@ -133,6 +133,32 @@
     outline-color: #364784;
     transform: scale(1.1);
   }
+
+  .kundvagn-gömd{
+    display: none;
+  }
+  .kundvagn-synlig{
+    display: block;
+    color: white;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+    padding: 15px;
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  #stäng-kundvagn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    color: red;
+  }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1407px) { /* fattar inte hur man ska göra detta */
@@ -271,6 +297,32 @@
     outline-color: #364784;
     transform: scale(1.1);
   }
+
+  .kundvagn-gömd{
+    display: none;
+  }
+  .kundvagn-synlig{
+    display: block;
+    color: white;
+    background-color: white;
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+    padding: 15px;
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  #stäng-kundvagn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    color: red;
+  }
 }
 
 @media screen and (min-width: 1008px) {
@@ -359,7 +411,31 @@
     -webkit-filter: invert();
     transform: scale(1.25);
   }
-  
+  .kundvagn-gömd{
+    display: none;
+  }
+  .kundvagn-synlig{
+    display: block;
+    color: white;
+    background-color: white;
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+    padding: 15px;
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  #stäng-kundvagn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    color: red;
+  }
   footer {
     background-color: #364784;
     text-align: center;
