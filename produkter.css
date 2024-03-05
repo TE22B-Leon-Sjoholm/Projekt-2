@@ -174,7 +174,7 @@
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    width: auto;
+    width: 100%;
   }
 
   img {
@@ -190,6 +190,7 @@
     text-align: center;
     justify-content: center;
     width: auto;
+    width: 100%;
   }
   #vapen1 {
     transform: scale(0.65);
