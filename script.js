@@ -23,6 +23,7 @@ function addKundvagn(vara, pris) {
   console.log(kundvagn)
   kundvagn.push({vara: vara, pris: pris});
   document.querySelector("#varor").innerHTML += "<li>" + vara + " - " + pris + "kr</li>";
+
   localStorage.setItem("kundvagn", JSON.stringify(kundvagn));
   console.log(vara, pris);
 }
