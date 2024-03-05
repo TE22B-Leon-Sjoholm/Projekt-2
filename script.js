@@ -17,13 +17,13 @@ function växlaKundvagn() {
   kundvagn.forEach(vara => {
     document.querySelector("#varor").innerHTML += "<li>" + vara.vara + " - " + vara.pris + "kr</li>";
   })
+  document.querySelector("#varor").innerHTML += "<li>Totalt: " + totalPriset + "kr</li>";
 }
 
 function addKundvagn(vara, pris) {
   console.log(kundvagn)
   kundvagn.push({vara: vara, pris: pris});
   document.querySelector("#varor").innerHTML += "<li>" + vara + " - " + pris + "kr</li>";
-
   localStorage.setItem("kundvagn", JSON.stringify(kundvagn));
   console.log(vara, pris);
 }
@@ -36,5 +36,11 @@ function totalPris() {
   )
   return totalPriset;
 }
+
+function tömKundvagn() {
+    totalPriset = 0;
+    document.querySelector("#varor").innerHTML = ""
+}
+
 
 

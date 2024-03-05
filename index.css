@@ -3,6 +3,7 @@
   html{
     height: 100%;
     width: 100%;
+    font-family: "Orbitron", Arial, sans-serif;
   }
   
   body{
@@ -161,10 +162,11 @@
   }
 }
 
-@media screen and (min-width: 641px) and (max-width: 1407px) { /* fattar inte hur man ska göra detta */
+@media screen and (min-width: 641px) and (max-width: 1007px) { /* fattar inte hur man ska göra detta */
   html{
     height: 100%;
     width: 100%;
+    font-family: "Orbitron", Arial, sans-serif;
   }
   
   body{
@@ -329,6 +331,7 @@
 @media screen and (min-width: 1008px) {
   html {
     height: 100%;
+    font-family: "Orbitron", Arial, sans-serif;
   }
 
   body {
