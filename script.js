@@ -1,17 +1,22 @@
-
 let kundvagn = [];
 
 document.addEventListener("DOMContentLoaded", (event) => {
   if (localStorage.getItem("kundvagn")) {
     kundvagn = JSON.parse(localStorage.getItem("kundvagn"));
   }
-  var totalPriset = totalPris();
-  console.log(totalPriset);
-
 });
+
+function totalPris() {
+  let totalPriset = 0;
+  kundvagn.forEach(vara => {
+    totalPriset += vara.pris;
+  })
+  return totalPriset;
+}
 
 function växlaKundvagn() {
   var kundvagnVäxla = document.getElementById("kundvagn");
+  var totalPriset = totalPris();
   kundvagnVäxla.classList.toggle("kundvagn-synlig");
   document.querySelector("#varor").innerHTML = ""
   kundvagn.forEach(vara => {
@@ -21,26 +26,17 @@ function växlaKundvagn() {
 }
 
 function addKundvagn(vara, pris) {
-  console.log(kundvagn)
   kundvagn.push({vara: vara, pris: pris});
   document.querySelector("#varor").innerHTML += "<li>" + vara + " - " + pris + "kr</li>";
   localStorage.setItem("kundvagn", JSON.stringify(kundvagn));
+  var totalPriset = totalPris();
+
   console.log(vara, pris);
 }
 
-function totalPris() {
-  let totalPriset = 0;
-  kundvagn.forEach(vara => {
-    totalPriset += vara.pris;
-  }
-  )
-  return totalPriset;
-}
-
 function tömKundvagn() {
-    totalPriset = 0;
-    document.querySelector("#varor").innerHTML = ""
+    document.querySelector('#varor').innerHTML = ""; 
+    localStorage.removeItem("kundvagn");
+    kundvagn = [];
+    var totalPriset = totalPris();
 }
-
-
-
