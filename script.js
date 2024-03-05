@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
   if (localStorage.getItem("kundvagn")) {
     kundvagn = JSON.parse(localStorage.getItem("kundvagn"));
   }
+  var totalPriset = totalPris();
+  console.log(totalPriset);
+
 });
 
 function växlaKundvagn() {
@@ -20,12 +23,12 @@ function addKundvagn(vara, pris) {
 }
 
 function totalPris() {
-  let totalPris = 0;
-  kundvagn.forEach(pris => {
-    totalPris += pris;
+  let totalPriset = 0;
+  kundvagn.forEach(vara => {
+    totalPriset += vara.pris;
   }
   )
-  return totalPris;
+  return totalPriset;
 }
 
-console.log(totalPris)
+
